@@ -1,0 +1,47 @@
+.wrapper {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.progress-bar {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	width: 210px;
+	height: 13px;
+	overflow: hidden;
+	background-color: #ffffff;
+	border-radius: 6px;
+	-webkit-box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.2);
+	box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.2);
+}
+.progress-bar__success {
+	top: 0;
+	left: 0;
+	width: 30%;
+	height: 100%;
+	border-radius: 6px;
+	box-sizing:border-box;
+	border-bottom: 1px #00db1b solid;
+	transition: width .6s ease;
+	background: #5ecc6d; /* Old browsers */
+	background: -moz-linear-gradient(top, #7fff57 0%, #00cb1d 60%, #5de515 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #7fff57 0%,#00cb1d 60%,#5de515 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #7fff57 0%,#00cb1d 60%,#5de515 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7fff57', endColorstr='#5de515',GradientType=0 ); /* IE6-9 */
+}
+.progress-bar__percent {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	line-height: 13px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 8.5px;
+	font-weight: bold;
+}

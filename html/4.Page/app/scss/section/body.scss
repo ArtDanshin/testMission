@@ -1,0 +1,259 @@
+// Стиль разбиения основного блока
+
+.main-block {
+	min-width: 928px;
+}
+.main-block__left {
+	float: left;
+	width: 220px;
+}
+.main-block__right {
+	float: right;
+	width: 684px;
+}
+
+// Левая колонка 
+
+.info-text {
+	font-size: 1.4em;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	line-height: 1.35em;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 43px;
+}
+
+// Правая колонка 
+// Блок с заголовком и прогресс баром
+
+.form-head {
+	width: 100%;
+	margin-bottom: 34px;
+}
+.progress-form-title {
+	float: left;
+	font-size: 2.2em;
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: normal;
+	padding: 0;
+	margin: 0;
+}
+.progress-bar {
+	float: right;
+	border-radius: 5px;
+	border: 1px white solid;
+	padding: 0;
+	margin: 0;
+	margin-top: 8px;
+	display: table;
+
+	.progress-bar__item {
+		display: inline-block;
+		width: 91px;
+		height: 13px;
+		background-color: #F6F6F6;
+		border-left: 1px #ffffff solid; 
+		word-spacing: normal;
+		text-align: center;
+		font-size: 1.1em;
+		font-style: italic;
+		color: #999999;
+		box-shadow: inset 0px 20px 2px -19px rgba(0,0,0,0.4),
+					inset 0px 20px 6px -16px rgba(0,0,0,0.1);
+
+
+		&:first-child {
+			border-left: 0;
+			border-radius: 5px 0 0 5px; 
+		} 
+		&:last-child {
+			border-right: 0;
+			border-radius: 0 5px 5px 0;
+		}
+		&.progress-bar__item_success {
+			background-color: #3BAD19;
+			color: #ffffff;
+		}
+		&.progress-bar__item_process {
+			background-color: #A4D807;
+			color: #ffffff;
+		}
+	}
+}
+
+// Заголовок блока
+
+.process-title {
+	overflow: hidden;
+	margin-bottom: 25px;
+}
+.process_title__text {
+	display: inline-block;
+	position: relative;
+	padding-right: 10px;
+	font-size: 1.4em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+	letter-spacing: -0.06em;
+	color: #777777;
+
+	&:after {
+		content: "";
+		display: block;
+		width: 2000px;
+		height: 1px;
+		background-color: #BBBBBB;
+		position: absolute;
+		top: 9px;
+		left: 100%;
+	}
+}
+
+// Стилизация элементов форм
+// Блоки в которых все находится
+.form-block {
+	width: 100%;
+	margin-bottom: 18px;
+
+	.form-block__item {
+		display: inline-block;
+		width: 183px;
+		margin-right: 38px;
+		margin-bottom: 31px;
+
+		&:nth-child(3n) {
+			margin-right: 0px;
+			width: 230px;
+		}
+		&.form-block__item_birth {
+			width: 217px;
+			margin-right: 5px;
+		}
+	}
+}
+
+// Названия блоков
+.form-label {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-bottom: 6px;
+}
+
+// Поля ввода текста 
+.form-input-text {
+	width: 100%;
+	height: 22px;
+	box-sizing: border-box;
+	padding: 0 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+}
+
+// Радио кнопки
+.form-input-radio {
+	margin-top: 9px;
+
+	.form-input-radio__item {
+		display: none;
+	}
+	.form-input-radio__text {
+		display: inline-block;
+		cursor: pointer;
+		font-size: 1.2em;
+		border-bottom: 1px #000000 dotted;
+		padding: 2px 3px;
+		margin: 2px 3px;
+	}
+	.form-input-radio__item:checked + .form-input-radio__text {
+		border: 0;
+		background-color: #8CB903;
+		color: #ffffff;
+		border-radius: 4px;
+		padding: 3px 8px;
+		margin: 0 1px;
+	}
+}
+
+// Раскрывающиеся списки
+.form-input-select {
+	width: 100%;
+	height: 20px;
+	font-size: 1.2em;
+	font-family: Arial, Helvetica, sans-serif;
+
+	&.form-input-select_bt-day {
+		width: 59px;
+		margin-right: 4px;
+	}
+	&.form-input-select_bt-month {
+		width: 80px;
+		margin-right: 4px;
+	}
+	&.form-input-select_bt-year {
+		width: 55px;
+	}
+}
+
+// Нижний блок с вводом текста
+.form-block__foot {
+	width: 100%;
+	box-sizing: border-box;
+	padding-right: 10px;
+}
+
+// Блок с кнопками
+.form-buttons-block {
+	width: 100%;
+	height: 65px;
+	background-color: #F2F2F2;
+	box-sizing: border-box;
+	padding: 14px 8px;
+}
+.form-example {
+	font-size: 1.1em;
+	font-family: Verbana, Arial, Helvetica, sans-serif;
+	color: #777777;
+}
+// Сами кнопки
+.form-button {
+	height: 35px;
+	border: 0;
+	border-radius: 20px;
+	font-size: 1.5em;
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: lighter;
+	color: #ffffff;
+	-webkit-box-shadow: inset 0px -1px 5px 0px rgba(0,0,0,0.2),
+					 	inset 0px 2px 5px 0px rgba(255,255,255,0.5);
+	-moz-box-shadow: inset 0px -1px 5px 0px rgba(0,0,0,0.2),
+					 inset 0px 2px 5px 0px rgba(255,255,255,0.5);
+	box-shadow: inset 0px -1px 5px 0px rgba(0,0,0,0.2),
+				inset 0px 2px 5px 0px rgba(255,255,255,0.5);
+
+	&:active,
+	&:focus {
+		outline: none;
+	}
+
+	&.form-button__left {
+		float: left;
+		width: 120px;
+		background-color: red;
+		background: #cbcbcb; /* Old browsers */
+		background: -moz-linear-gradient(top,  #cbcbcb 0%, #9b9b9b 75%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #cbcbcb 0%,#9b9b9b 75%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #cbcbcb 0%,#9b9b9b 75%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cbcbcb', endColorstr='#9b9b9b',GradientType=0 ); /* IE6-9 */
+
+	}
+	&.form-button__right {
+		float: right;
+		width: 128px;
+		background: #b2e027; /* Old browsers */
+		background: -moz-linear-gradient(top,  #b2e027 0%, #94c403 74%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #b2e027 0%,#94c403 74%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #b2e027 0%,#94c403 74%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2e027', endColorstr='#94c403',GradientType=0 ); /* IE6-9 */
+	}
+}

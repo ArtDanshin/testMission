@@ -1,0 +1,26 @@
+doctype html
+html(lang="ru-Ru")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="vieport" content="device-width")
+		title
+			block title
+		// SEO
+		meta(name="description" content="Test Page")
+		meta(name="keywords" content="page")
+		meta(name="author" content="Artem Danshin")
+		// CSS
+		link(rel="stylesheet" type="text/css" href="/css/main.css")
+		// modernizr
+		script(src="bower/modernizr/modernizr.js")
+	body
+		.wrapper-limiter
+			.wrapper-limiter__center
+				include _common/_header.jade
+				main.main-block.clearfix
+					.main-block__left
+						p.info-text &#9728;TutuRu - крупнейший сервис поиска, бронирования и покупки авиабилетов и ж/д билетов.
+						p.info-text Наша цель проста - делать наших клиентов счастливыми, а их путешествия незабываемыми. Любое путешествие начинается<br>с поиска подходящих билетов и бронирования гостиниц.<br>А мы делаем это качественно, обеспечивая самую лучшую поддержку благодаря собственному контакт-центру.
+					.main-block__right
+						block content

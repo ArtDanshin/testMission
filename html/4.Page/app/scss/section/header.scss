@@ -1,0 +1,63 @@
+.header {
+	min-width: 928px;
+	margin: 42px 0 55px 0;
+}
+
+// Стилизация блока навигации
+
+.navigation {
+	float: right;
+	width: 684px;
+	height: 67px;
+	border-radius: 10px;
+	padding: 14px 7px;
+	box-sizing: border-box;
+	-webkit-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.25);
+	box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.25);
+}
+
+.navigation__block {
+	
+	
+	.navigation__item{
+		display: inline-block;
+		margin-left: 26px;
+
+		&:first-child {
+			margin-left: 0px;
+		} 
+
+		.navigation__link {
+			font-size: 1.5em;
+			font-family: Verbana, Arial, Helvetica, sans-serif;
+			text-decoration: none;
+			border-bottom: 1px #000000 solid;
+
+			&.navigation__link_purple {
+				color: #8B00A4;
+				border-bottom: 1px #8B00A4 solid;
+			}
+			&.navigation__link_green {
+				color: #14731B;
+				border-bottom: 1px #14731B solid;
+			}
+			&.navigation__link_blue {
+				color: #0E73D9;
+				border-bottom: 1px #0E73D9 solid;
+			}
+			&.navigation__link_orange {
+				color: #DD4C00;
+				border-bottom: 1px #DD4C00 solid;
+			}
+			&.navigation__link_grey {
+				color: #333333;
+				border-bottom: 1px #333333 solid;
+			}
+			&.navigation__link_red {
+				color: #B60700;
+				border-bottom: 1px #B60700 solid;
+			}
+		}
+	}
+}

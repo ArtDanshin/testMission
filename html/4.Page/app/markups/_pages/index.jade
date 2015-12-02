@@ -1,0 +1,78 @@
+extends ../main
+
+block title
+	| Тестовое задание
+
+block content			
+	.form-head.clearfix
+		h2.progress-form-title Заполните форму
+		ul.progress-bar
+			li.progress-bar__item.progress-bar__item_success 1
+			li.progress-bar__item.progress-bar__item_success 2
+			li.progress-bar__item.progress-bar__item_process 3
+			li.progress-bar__item 4
+			li.progress-bar__item 5
+	.process-title
+		.process_title__text Общая информация
+	form(action="index.html" method="GET")
+		.form-block
+			.form-block__item
+				.form-label Фамилия
+				input(class="form-input-text" type="text" name="familyName")
+			.form-block__item
+				.form-label Имя
+				input(class="form-input-text" type="text" name="Name")
+			.form-block__item
+				.form-label Отчество
+				input(class="form-input-text" type="text" name="middleName")
+			.form-block__item
+				.form-label Меняли фамилию?
+				.form-input-radio
+					input(class="form-input-radio__item" id="replace-family-yes" type="radio" name="replaceFamily" value="yes")
+					label(class="form-input-radio__text" for="replace-family-yes") Да
+					input(class="form-input-radio__item" id="replace-family-no" type="radio" name="replaceFamily" value="no" checked)
+					label(class="form-input-radio__text" for="replace-family-no") Нет
+			.form-block__item
+				.form-label Пол
+				.form-input-radio
+					input(class="form-input-radio__item" id="gender-yes" type="radio" name="gender" value="yes" checked)
+					label(class="form-input-radio__text" for="gender-yes") Муж
+					input(class="form-input-radio__item" id="gender-no" type="radio" name="gender" value="no")
+					label(class="form-input-radio__text" for="gender-no") Жен
+			.form-block__item
+				.form-label Семейное положение
+				select(class="form-input-select" name="married")
+					option(class="form-input-select__item") Женат / Замужем
+					option(class="form-input-select__item") Не женат / Не замужем
+			.form-block__item
+				.form-label Гражданство
+				select(class="form-input-select" name="nation")
+					option(class="form-input-select__item") Российская Федерация
+					option(class="form-input-select__item") Белоруссия
+					option(class="form-input-select__item") Украина
+					option(class="form-input-select__item") Казахстан
+			.form-block__item.form-block__item_birth
+				.form-label Дата рождения
+				select(class="form-input-select form-input-select_bt-day" name="birth-d")
+					- for (var i = 1; i < 32; i++)
+						option(class="form-input-select__item")=i
+				select(class="form-input-select form-input-select_bt-month" name="birth-m")
+					- var months = ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь']
+						each month in months
+							option(class="form-input-select__item")=month
+				select(class="form-input-select form-input-select_bt-year" name="birth-y")
+					- for (var i = 1970; i < 2016; i++)
+						option(class="form-input-select__item")=i
+			.form-block__foot
+				.form-label Место рождения
+				input(class="form-input-text" type="text" name="placeBirth")
+				p.form-example Например, Россия, Комсомольск-на-Амуре
+		.form-buttons-block
+			button(class="form-button form-button__left" type="reset") &larr; Назад
+			button(class="form-button form-button__right" type="submit") Далее &#8594;
+
+
+
+
+
+

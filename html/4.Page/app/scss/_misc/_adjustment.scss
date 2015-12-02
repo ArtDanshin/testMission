@@ -1,0 +1,30 @@
+html {
+	height: 100%;
+	background-color: #ffffff;
+}
+body {
+	height: 100%;
+	font: normal 62.5% Verbana, Arial, Helvetica, sans-serif;
+	color: #333333;
+}
+
+.wrapper-limiter {
+	width: 1024px;
+	margin: 0 auto;
+}
+.wrapper-limiter__center {
+	width: 928px;
+	margin: 0 auto;
+}
+
+
+/* clearfix */
+
+.container:before, .clearfix:before,
+.container:after, .clearfix:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+.container:after, .clearfix:after {
+	clear: both;
+}

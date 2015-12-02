@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru-Ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="vieport" content="device-width">
+		<title>Тестовое задание</title>
+		<!-- SEO-->
+		<meta name="description" content="Test Page">
+		<meta name="keywords" content="page">
+		<meta name="author" content="Artem Danshin">
+		<!-- CSS-->
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<!-- modernizr-->
+		<script src="bower/modernizr/modernizr.js"></script>
+	</head>
+	<body>
+		<div class="wrapper-limiter">
+			<div class="wrapper-limiter__center">
+				<header class="header clearfix">
+					<nav class="navigation">
+						<ul class="navigation__block">
+							<li class="navigation__item"><a href="#" class="navigation__link navigation__link_purple">Личный кабинет</a></li>
+							<li class="navigation__item"> <a href="#" class="navigation__link navigation__link_green">Раздел 1</a></li>
+							<li class="navigation__item"> <a href="#" class="navigation__link navigation__link_blue">Раздел 2</a></li>
+							<li class="navigation__item"> <a href="#" class="navigation__link navigation__link_orange">Раздел 3</a></li>
+							<li class="navigation__item"> <a href="#" class="navigation__link navigation__link_grey">Раздел 4</a></li>
+							<li class="navigation__item"> <a href="#" class="navigation__link navigation__link_red">Раздел 5</a></li>
+						</ul>
+					</nav>
+				</header>
+				<main class="main-block clearfix">
+					<div class="main-block__left">
+						<p class="info-text">&#9728;TutuRu - крупнейший сервис поиска, бронирования и покупки авиабилетов и ж/д билетов.</p>
+						<p class="info-text">Наша цель проста - делать наших клиентов счастливыми, а их путешествия незабываемыми. Любое путешествие начинается<br>с поиска подходящих билетов и бронирования гостиниц.<br>А мы делаем это качественно, обеспечивая самую лучшую поддержку благодаря собственному контакт-центру.</p>
+					</div>
+					<div class="main-block__right">
+						<div class="form-head clearfix">
+							<h2 class="progress-form-title">Заполните форму</h2>
+							<ul class="progress-bar">
+								<li class="progress-bar__item progress-bar__item_success">1</li>
+								<li class="progress-bar__item progress-bar__item_success">2</li>
+								<li class="progress-bar__item progress-bar__item_process">3</li>
+								<li class="progress-bar__item">4</li>
+								<li class="progress-bar__item">5</li>
+							</ul>
+						</div>
+						<div class="process-title">
+							<div class="process_title__text">Общая информация</div>
+						</div>
+						<form action="index.html" method="GET">
+							<div class="form-block">
+								<div class="form-block__item">
+									<div class="form-label">Фамилия</div>
+									<input type="text" name="familyName" class="form-input-text">
+								</div>
+								<div class="form-block__item">
+									<div class="form-label">Имя</div>
+									<input type="text" name="Name" class="form-input-text">
+								</div>
+								<div class="form-block__item">
+									<div class="form-label">Отчество</div>
+									<input type="text" name="middleName" class="form-input-text">
+								</div>
+								<div class="form-block__item">
+									<div class="form-label">Меняли фамилию?</div>
+									<div class="form-input-radio">
+										<input id="replace-family-yes" type="radio" name="replaceFamily" value="yes" class="form-input-radio__item">
+										<label for="replace-family-yes" class="form-input-radio__text">Да</label>
+										<input id="replace-family-no" type="radio" name="replaceFamily" value="no" checked class="form-input-radio__item">
+										<label for="replace-family-no" class="form-input-radio__text">Нет</label>
+									</div>
+								</div>
+								<div class="form-block__item">
+									<div class="form-label">Пол</div>
+									<div class="form-input-radio">
+										<input id="gender-yes" type="radio" name="gender" value="yes" checked class="form-input-radio__item">
+										<label for="gender-yes" class="form-input-radio__text">Муж</label>
+										<input id="gender-no" type="radio" name="gender" value="no" class="form-input-radio__item">
+										<label for="gender-no" class="form-input-radio__text">Жен</label>
+									</div>
+								</div>
+								<div class="form-block__item">
+									<div class="form-label">Семейное положение</div>
+									<select name="married" class="form-input-select">
+										<option class="form-input-select__item">Женат / Замужем</option>
+										<option class="form-input-select__item">Не женат / Не замужем</option>
+									</select>
+								</div>
+								<div class="form-block__item">
+									<div class="form-label">Гражданство</div>
+									<select name="nation" class="form-input-select">
+										<option class="form-input-select__item">Российская Федерация</option>
+										<option class="form-input-select__item">Белоруссия</option>
+										<option class="form-input-select__item">Украина</option>
+										<option class="form-input-select__item">Казахстан</option>
+									</select>
+								</div>
+								<div class="form-block__item form-block__item_birth">
+									<div class="form-label">Дата рождения</div>
+									<select name="birth-d" class="form-input-select form-input-select_bt-day">
+										<option class="form-input-select__item">1</option>
+										<option class="form-input-select__item">2</option>
+										<option class="form-input-select__item">3</option>
+										<option class="form-input-select__item">4</option>
+										<option class="form-input-select__item">5</option>
+										<option class="form-input-select__item">6</option>
+										<option class="form-input-select__item">7</option>
+										<option class="form-input-select__item">8</option>
+										<option class="form-input-select__item">9</option>
+										<option class="form-input-select__item">10</option>
+										<option class="form-input-select__item">11</option>
+										<option class="form-input-select__item">12</option>
+										<option class="form-input-select__item">13</option>
+										<option class="form-input-select__item">14</option>
+										<option class="form-input-select__item">15</option>
+										<option class="form-input-select__item">16</option>
+										<option class="form-input-select__item">17</option>
+										<option class="form-input-select__item">18</option>
+										<option class="form-input-select__item">19</option>
+										<option class="form-input-select__item">20</option>
+										<option class="form-input-select__item">21</option>
+										<option class="form-input-select__item">22</option>
+										<option class="form-input-select__item">23</option>
+										<option class="form-input-select__item">24</option>
+										<option class="form-input-select__item">25</option>
+										<option class="form-input-select__item">26</option>
+										<option class="form-input-select__item">27</option>
+										<option class="form-input-select__item">28</option>
+										<option class="form-input-select__item">29</option>
+										<option class="form-input-select__item">30</option>
+										<option class="form-input-select__item">31</option>
+									</select>
+									<select name="birth-m" class="form-input-select form-input-select_bt-month">
+										<option class="form-input-select__item">Январь</option>
+										<option class="form-input-select__item">Февраль</option>
+										<option class="form-input-select__item">Март</option>
+										<option class="form-input-select__item">Апрель</option>
+										<option class="form-input-select__item">Май</option>
+										<option class="form-input-select__item">Июнь</option>
+										<option class="form-input-select__item">Июль</option>
+										<option class="form-input-select__item">Август</option>
+										<option class="form-input-select__item">Сентябрь</option>
+										<option class="form-input-select__item">Октябрь</option>
+										<option class="form-input-select__item">Ноябрь</option>
+										<option class="form-input-select__item">Декабрь</option>
+									</select>
+									<select name="birth-y" class="form-input-select form-input-select_bt-year">
+										<option class="form-input-select__item">1970</option>
+										<option class="form-input-select__item">1971</option>
+										<option class="form-input-select__item">1972</option>
+										<option class="form-input-select__item">1973</option>
+										<option class="form-input-select__item">1974</option>
+										<option class="form-input-select__item">1975</option>
+										<option class="form-input-select__item">1976</option>
+										<option class="form-input-select__item">1977</option>
+										<option class="form-input-select__item">1978</option>
+										<option class="form-input-select__item">1979</option>
+										<option class="form-input-select__item">1980</option>
+										<option class="form-input-select__item">1981</option>
+										<option class="form-input-select__item">1982</option>
+										<option class="form-input-select__item">1983</option>
+										<option class="form-input-select__item">1984</option>
+										<option class="form-input-select__item">1985</option>
+										<option class="form-input-select__item">1986</option>
+										<option class="form-input-select__item">1987</option>
+										<option class="form-input-select__item">1988</option>
+										<option class="form-input-select__item">1989</option>
+										<option class="form-input-select__item">1990</option>
+										<option class="form-input-select__item">1991</option>
+										<option class="form-input-select__item">1992</option>
+										<option class="form-input-select__item">1993</option>
+										<option class="form-input-select__item">1994</option>
+										<option class="form-input-select__item">1995</option>
+										<option class="form-input-select__item">1996</option>
+										<option class="form-input-select__item">1997</option>
+										<option class="form-input-select__item">1998</option>
+										<option class="form-input-select__item">1999</option>
+										<option class="form-input-select__item">2000</option>
+										<option class="form-input-select__item">2001</option>
+										<option class="form-input-select__item">2002</option>
+										<option class="form-input-select__item">2003</option>
+										<option class="form-input-select__item">2004</option>
+										<option class="form-input-select__item">2005</option>
+										<option class="form-input-select__item">2006</option>
+										<option class="form-input-select__item">2007</option>
+										<option class="form-input-select__item">2008</option>
+										<option class="form-input-select__item">2009</option>
+										<option class="form-input-select__item">2010</option>
+										<option class="form-input-select__item">2011</option>
+										<option class="form-input-select__item">2012</option>
+										<option class="form-input-select__item">2013</option>
+										<option class="form-input-select__item">2014</option>
+										<option class="form-input-select__item">2015</option>
+									</select>
+								</div>
+								<div class="form-block__foot">
+									<div class="form-label">Место рождения</div>
+									<input type="text" name="placeBirth" class="form-input-text">
+									<p class="form-example">Например, Россия, Комсомольск-на-Амуре</p>
+								</div>
+							</div>
+							<div class="form-buttons-block">
+								<button type="reset" class="form-button form-button__left">&larr; Назад</button>
+								<button type="submit" class="form-button form-button__right">Далее &#8594;</button>
+							</div>
+						</form>
+					</div>
+				</main>
+			</div>
+		</div>
+	</body>
+</html>

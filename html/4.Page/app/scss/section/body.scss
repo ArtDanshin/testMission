@@ -1,15 +1,15 @@
 // Стиль разбиения основного блока
 
 .main-block {
-	min-width: 928px;
+	min-width: 90.625%;
 }
 .main-block__left {
 	float: left;
-	width: 220px;
+	width: 23.70689655172414%;
 }
 .main-block__right {
 	float: right;
-	width: 684px;
+	max-width: 73.70689655172414%;
 }
 
 // Левая колонка 
@@ -28,7 +28,6 @@
 
 .form-head {
 	width: 100%;
-	margin-bottom: 34px;
 }
 .progress-form-title {
 	float: left;
@@ -37,6 +36,7 @@
 	font-weight: normal;
 	padding: 0;
 	margin: 0;
+	margin-bottom: 34px;
 }
 .progress-bar {
 	float: right;
@@ -45,14 +45,18 @@
 	padding: 0;
 	margin: 0;
 	margin-top: 8px;
+	word-spacing: -.36em;
 	display: table;
+	width: 67.10526315789474%;
+	margin-bottom: 34px;
 
 	.progress-bar__item {
 		display: inline-block;
-		width: 91px;
+		width: 19.82570806100218%;
 		height: 13px;
 		background-color: #F6F6F6;
-		border-left: 1px #ffffff solid; 
+		border-left: 1px #ffffff solid;
+		box-sizing: border-box; 
 		word-spacing: normal;
 		text-align: center;
 		font-size: 1.1em;
@@ -117,16 +121,16 @@
 
 	.form-block__item {
 		display: inline-block;
-		width: 183px;
-		margin-right: 38px;
+		width: 26.75438596491228%;
+		margin-right: 5.555555555555556%;
 		margin-bottom: 31px;
 
 		&:nth-child(3n) {
 			margin-right: 0px;
-			width: 230px;
+			width: 33.62573099415205%;
 		}
 		&.form-block__item_birth {
-			width: 217px;
+			width: 31.72514619883041%;
 			margin-right: 5px;
 		}
 	}
@@ -183,15 +187,15 @@
 	font-family: Arial, Helvetica, sans-serif;
 
 	&.form-input-select_bt-day {
-		width: 59px;
-		margin-right: 4px;
+		width: 27.1889400921659%;
+		margin-right: 1.84331797235023%;
 	}
 	&.form-input-select_bt-month {
-		width: 80px;
-		margin-right: 4px;
+		width: 36.86635944700461%;
+		margin-right: 1.84331797235023%;
 	}
 	&.form-input-select_bt-year {
-		width: 55px;
+		width: 25.34562211981567%;
 	}
 }
 

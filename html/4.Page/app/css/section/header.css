@@ -1,23 +1,29 @@
 .header {
-  min-width: 928px;
+  min-width: 90.625%;
   margin: 42px 0 55px 0;
 }
 
 .navigation {
   float: right;
-  width: 684px;
-  height: 67px;
+  width: 73.70689655172414%;
   border-radius: 10px;
-  padding: 14px 7px;
+  padding: 24px 27px 0 27px;
   box-sizing: border-box;
   -webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.25);
 }
 
+.navigation__block {
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
 .navigation__block .navigation__item {
   display: inline-block;
   margin-left: 26px;
+  margin-bottom: 26px;
 }
 .navigation__block .navigation__item:first-child {
   margin-left: 0px;

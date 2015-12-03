@@ -1,5 +1,4 @@
 html {
-	height: 100%;
 	background-color: #ffffff;
 }
 body {
@@ -9,11 +8,11 @@ body {
 }
 
 .wrapper-limiter {
-	width: 1024px;
+	max-width: 1024px;
 	margin: 0 auto;
 }
 .wrapper-limiter__center {
-	width: 928px;
+	max-width: 90.625%;
 	margin: 0 auto;
 }
 

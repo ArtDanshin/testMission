@@ -1,0 +1,71 @@
+body {
+	font: normal 62.5% Verbana, Arial, Helvetica, sans-serif;
+}
+
+/* Стили блоков где находятся разные вариации окружения кнопок */
+.wrapper {
+	margin: 0 auto;
+	width: 90%;
+}
+.buttons {
+	width: 50%;
+	margin: 60px auto;
+
+}
+.buttons__item {
+	width: 50px;
+	height: 30px;
+}
+.buttons__item.buttons__item_small {
+	float: left;
+}
+.buttons__item.buttons__item_big {
+	float: right;
+}
+.table {
+	width: 100%;
+}
+.table-head{
+	width: 100%;
+	word-spacing: -.36em;
+	display: table;
+	margin-bottom: 5px;
+}
+.table-head__item {
+	display: inline-block;
+	word-spacing: normal;
+	width:20%;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 2px;
+	border: 1px black dashed;
+	text-align: center;
+}
+.table-row {
+	width: 100%;
+	display: table;
+	word-spacing: -.36em;
+}
+.table-row__item {
+	display: inline-block;
+	word-spacing: normal;
+	width: 20%;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 2px;
+	border: 1px black dashed;
+	text-align: center;
+
+}
+/* clearfix */
+.container:before, .clearfix:before,
+.container:after, .clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.container:after, .clearfix:after {
+  clear: both;
+}

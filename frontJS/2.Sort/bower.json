@@ -1,0 +1,7 @@
+{
+  "name": "Button",
+  "dependencies": {
+    "normalize-css": "normalize.css#~3.0.3",
+    "jquery": "jQuery#1.11.3"
+  }
+}

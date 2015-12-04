@@ -405,6 +405,11 @@ body {
   font: normal 62.5% Verbana, Arial, Helvetica, sans-serif;
   color: #333333;
 }
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 50%;
+  }
+}
 
 .wrapper-limiter {
   max-width: 1024px;
@@ -444,6 +449,12 @@ body {
   -webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+@media screen and (max-width: 480px) {
+  .navigation {
+    float: none;
+    width: 100%;
+  }
 }
 
 .navigation__block {
@@ -499,10 +510,21 @@ body {
   float: left;
   width: 23.70689655172414%;
 }
+@media screen and (max-width: 480px) {
+  .main-block__left {
+    display: none;
+  }
+}
 
 .main-block__right {
   float: right;
   max-width: 73.70689655172414%;
+}
+@media screen and (max-width: 480px) {
+  .main-block__right {
+    float: none;
+    max-width: 100%;
+  }
 }
 
 .info-text {
@@ -527,6 +549,11 @@ body {
   margin: 0;
   margin-bottom: 34px;
 }
+@media screen and (max-width: 480px) {
+  .progress-form-title {
+    float: none;
+  }
+}
 
 .progress-bar {
   float: right;
@@ -539,6 +566,13 @@ body {
   display: table;
   width: 67.10526315789474%;
   margin-bottom: 34px;
+}
+@media screen and (max-width: 480px) {
+  .progress-bar {
+    float: none;
+    width: 100%;
+    margin-bottom: 34px;
+  }
 }
 .progress-bar .progress-bar__item {
   display: inline-block;
@@ -607,13 +641,60 @@ body {
   margin-right: 5.555555555555556%;
   margin-bottom: 31px;
 }
+@media screen and (max-width: 700px) {
+  .form-block .form-block__item {
+    width: 47%;
+    margin-right: 5%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form-block .form-block__item {
+    width: 100%;
+    margin-right: 0;
+  }
+}
 .form-block .form-block__item:nth-child(3n) {
   margin-right: 0px;
   width: 33.62573099415205%;
 }
+@media screen and (max-width: 700px) {
+  .form-block .form-block__item:nth-child(3n) {
+    width: 47%;
+    margin-right: 5%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form-block .form-block__item:nth-child(3n) {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .form-block .form-block__item:nth-child(2n) {
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form-block .form-block__item:nth-child(2n) {
+    width: 100%;
+    margin-right: 0;
+  }
+}
 .form-block .form-block__item.form-block__item_birth {
   width: 31.72514619883041%;
   margin-right: 5px;
+}
+@media screen and (max-width: 700px) {
+  .form-block .form-block__item.form-block__item_birth {
+    width: 47%;
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form-block .form-block__item.form-block__item_birth {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 
 .form-label {
